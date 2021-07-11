@@ -57,9 +57,15 @@
                             </ul>
                         </li>
                     </ul>
+                    <div class="mobile__btn">
+                        <a href="#popup" class="header__login popup-link btn_white">Login</a>
+                        <a href="#" class="header__provider btn_dark">Find a provider</a>
+                    </div>
                 </nav>
-                <a href="#popup" class="header__login popup-link btn_white">Login</a>
-                <a href="#" class="btn_dark">Find a provider</a>
+                <div class="pc__btn">
+                    <a href="#popup" class="header__login popup-link btn_white">Login</a>
+                    <a href="#" class="header__provider btn_dark">Find a provider</a>
+                </div>
             </div>
         </div>
     </header>  
@@ -116,8 +122,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="resons__img">
-                        <img src="images/process.jpg" alt="">
+                    <div class="reasons__img">
                     </div>
                 </div>
                 <div class="why_alma__network">
@@ -133,16 +138,16 @@
         <section class="workers">
             <div class="container">
                 <div class="workers__gallery">
-                    <div class="gallery__img-1"><img src="images/workers/worker-1.jpg" alt="Worker"></div>
-                    <div class="gallery__img-2"><img src="images/workers/worker-2.jpg" alt="Worker"></div>
-                    <div class="gallery__img-3"><img src="images/workers/worker-3.jpg" alt="Worker"></div>
-                    <div class="gallery__img-4"><img src="images/workers/worker-4.jpg" alt="Worker"></div>
-                    <div class="gallery__img-5"><img src="images/workers/worker-5.jpg" alt="Worker"></div>
-                    <div class="gallery__img-6"><img src="images/workers/worker-6.jpg" alt="Worker"></div>
-                    <div class="gallery__img-7"><img src="images/workers/worker-7.jpg" alt="Worker"></div>
-                    <div class="gallery__img-8"><img src="images/workers/worker-8.jpg" alt="Worker"></div>
-                    <div class="gallery__img-9"><img src="images/workers/worker-9.jpg" alt="Worker"></div>
-                    <div class="gallery__img-10"><img src="images/workers/worker-10.jpg" alt="Worker"></div>
+                    <div class="gallery__img-1 gallery_link"></div>
+                    <div class="gallery__img-2 gallery_link"></div>
+                    <div class="gallery__img-3 gallery_link"></div>
+                    <div class="gallery__img-4 gallery_link"></div>
+                    <div class="gallery__img-5 gallery_link"></div>
+                    <div class="gallery__img-6 gallery_link"></div>
+                    <div class="gallery__img-7 gallery_link"></div>
+                    <div class="gallery__img-8 gallery_link"></div>
+                    <div class="gallery__img-9 gallery_link"></div>
+                    <div class="gallery__img-10 gallery_link"></div>
                 </div>
             </div>
         </section>
@@ -162,8 +167,18 @@
             <div class="container">
                 <div class="search__box">
                     <div class="search__providers">
-                        <img src="images/people-info_1.jpg" alt="Provider" class="main-image">
-                        <img src="images/people-info_2.jpg" alt="Provider" class="top-image">
+                        <picture>
+                            <source media="(min-width: 700px)" srcset="images/people-info_1.jpg">
+                            <source media="(min-width: 400px)" srcset="images/people-info_1-300.jpg">
+                            <source media="(max-width: 399px)" srcset="images/people-info_1-250.jpg">
+                            <img src="images/people-info_1.jpg" alt="Provider" class="main-image search_img">
+                          </picture> 
+                          <picture>
+                            <source media="(min-width: 700px)" srcset="images/people-info_2.jpg">
+                            <source media="(min-width: 400px)" srcset="images/people-info_2-300.jpg">
+                            <source media="(max-width: 399px)" srcset="images/people-info_2-250.jpg">
+                            <img src="images/people-info_2.jpg" alt="Provider" class="top-image search_img">
+                          </picture>                       
                     </div>
                     <div class="search__form">
                         <h2 class="search__form-title">Find a licensed provider in your state.</h2>
@@ -191,16 +206,16 @@
                     <div class="in_touch__form-box">
                         <div class="in_touch__form-first">
                             <label for="first-name">First Name</label><br>
-                            <input type="text" required id="first-name">
+                            <input type="text" required id="first-name"><br>
                             <label for="email">Email Address</label><br>
-                            <input type="email" required id="email">
+                            <input type="email" required id="email"><br>
                             <label for="form-state">State</label><br>
-                            <input type="text" required id="form-state">
+                            <input type="text" required id="form-state"><br>
                             <button type="button" form="touch" class="btn_dark">Stay in Touch</button>
                         </div>
                         <div class="in_touch__form-second">
                             <label for="last-name">Last Name</label><br>
-                            <input type="text" id="last-name">
+                            <input type="text" id="last-name"><br>
                             <label for="profession">I'm a</label><br>
                             <input type="email" id="profession">
                         </div>
