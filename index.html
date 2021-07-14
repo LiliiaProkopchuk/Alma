@@ -58,12 +58,12 @@
                         </li>
                     </ul>
                     <div class="mobile__btn">
-                        <a href="#popup" class="header__login popup-link btn_white">Login</a>
+                        <a href="#popup" class="header__login popup-link _anim-items _anim-no-hide btn_white">Login</a>
                         <a href="#" class="header__provider btn_dark">Find a provider</a>
                     </div>
                 </nav>
                 <div class="pc__btn">
-                    <a href="#popup" class="header__login popup-link btn_white">Login</a>
+                    <a href="#popup" class="header__login popup-link _anim-items _anim-no-hide btn_white">Login</a>
                     <a href="#" class="header__provider btn_dark">Find a provider</a>
                 </div>
             </div>
@@ -291,6 +291,20 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"><img src="images/cross-close-svgrepo-com.svg" alt="Close"></a>
+                <h2 class="popup__title">Ваши данные</h2>
+                <form action="" method="POST" class="popup__form">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="password" name="password" placeholder="Пароль">
+                    <button class="popup__btn" type="submit">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.min.js"></script>
 </body>
